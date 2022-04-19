@@ -103,7 +103,6 @@ const ProjectsProvider = ({ children }) => {
   } 
   
   const deleteTaskProject = async task => {
-    console.log(task)
     const updatedProject = { ...project }
     updatedProject.tasks = updatedProject.tasks.filter( taskState => taskState._id !== task.taskId)
     setProject(updatedProject)
@@ -409,7 +408,7 @@ const ProjectsProvider = ({ children }) => {
 
       setTimeout(() => {
         navigate("/projects")
-      }, 1500);
+      }, 500);
 
     } catch (error) {
       console.log(error)
@@ -475,7 +474,7 @@ const ProjectsProvider = ({ children }) => {
 
       setTimeout(() => {
         navigate("/projects")
-      }, 1500);
+      }, 500);
 
     } catch (error) {
       console.log(error)
