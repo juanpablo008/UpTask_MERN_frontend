@@ -65,7 +65,7 @@ const SignUp = () => {
       //onsole.log(error.response.data.msg)
       showAlertSuccErr({
         title: error.response.data.msg,
-        icon:'error'
+        icon: 'error'
       })
     } 
   }
